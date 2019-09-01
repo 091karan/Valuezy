@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@drawable/places_item_bg"
+    >
+
+    <TextView
+        android:id="@+id/storeName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/places_item_head_bg"
+        android:text="Store name"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal|center_vertical"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/discountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute,UselessLeaf"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/storeName">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount :"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="10%"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/addressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute,UselessLeaf"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/discountLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/store_address"/>
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Abc ,Xyz street"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/offerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hurry up and snag 10% off by scanning QR code on this store."
+        tools:ignore="HardcodedText,UnusedAttribute"
+        android:layout_below="@+id/addressLayout"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute,UselessLeaf"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/offerText">
+
+        <Button
+            android:id="@+id/getDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Get Direction"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_bg"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded" />
+    </LinearLayout>
+
+</RelativeLayout>
