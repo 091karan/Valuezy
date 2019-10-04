@@ -14,8 +14,8 @@
     <string name="enter_the_otp_below_in_case_we_fail_to_detect_the_sms_automatically">Enter the otp below in case we fail to detect the sms automatically.</string>
     <string name="verify">VERIFY</string>
     <string name="resend_otp">Resend OTP</string>
-    <string name="facebook_app_id">1193232637514639</string>
-    <string name="fb_login_protocol_scheme">fb1193232637514639</string>
+    <string name="facebook_app_id">your facebook app id</string>
+    <string name="fb_login_protocol_scheme">fb login protocol scheme</string>
     <string name="you_are_now_logged_in">You are now logged In.</string>
     <string name="signout">Signout</string>
     <string name="confirm_password">Confirm password</string>
